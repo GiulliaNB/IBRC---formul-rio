@@ -1,0 +1,304 @@
+<my-app>
+  <header>
+    <div class="overlay">
+    <h1>IBRC - formulário</h1>
+    <br>
+    </div>
+    <script type="javascript" src="pagecode.js"></script>
+    </header>
+    <form>
+      <h3>A - Antes de começarmos a pesquisa, por gentileza nos informe a sua idade:</h3>
+    <input type="checkbox" class="idade" id="unDezo" name="idade" value="1" onclick="return redirect();"/>   
+    <label class="form-check-label" for="unDezo">Menos de 18 anos</label>  
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="dezoVin" name="idade" />
+      <label class="form-check-label" for="dezoVin">De 18 a 20 anos</label>
+    </div>
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="vinTrin" name="idade" />
+    <label class="form-check-label" for="vinTrin">De 21 a 30 anos</label>
+    </div>
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="trinQua" name="idade" />
+    <label class="form-check-label" for="trinQua">De 31 a 40 anos</label>
+    </div>
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="quaCin" name="idade" />
+    <label class="form-check-label" for="quaCin">De 41 a 50 anos</label>
+    </div>
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="cinSes" name="idade" />
+    <label class="form-check-label" for="cinSes">De 51 a 60 anos</label>
+    </div>
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="abvSes" name="idade" />
+    <label class="form-check-label" for="abvSes">Mais de 60 anos</label>
+    </div>
+    <h3>1 - Quando pensa em plano de saúde, qual é o nome da operadora que primeiro lhe vem à cabeça?</h3>
+    <select id="operadora" class="operadora" action="">
+    <option>Opção 1</option>
+    <option>Opção 2</option>
+    <option>Opção 3</option>
+    <option>Opção 4</option>
+    </select>
+    <h3>2 - Por ordem de prioridade, peço que diga o que considera mais importante na gestão do seu plano de previdência, onde 1 é o mais importante e 5 é o menos importante?</h3>
+    <h4><label>1º Mais importante</label><select id="prioridadeUm" action="">
+      <option>Escolha uma das opções</option>
+      <option>Resultado dos investimentos do plano</option>
+      <option>Atendimento da área de relacionamento institucional</option>
+      <option>Atendimento (e-mail, site, telefone )</option>
+      <option>Compromisso com a Integridade</option>
+      <option>Consultoria Previdenciária</option>
+      </select></h4>
+      <h4><label>2º Mais importante</label><select id="prioridadeDois" action=""><label></label>
+        <option>Escolha uma das opções</option>
+        <option>Resultado dos investimentos do plano</option>
+        <option>Atendimento da área de relacionamento institucional</option>
+        <option>Atendimento (e-mail, site, telefone )</option>
+        <option>Compromisso com a Integridade</option>
+        <option>Consultoria Previdenciária</option>
+      </select></h4>
+      <h4><label>3º Mais importante</label><select id="prioridadeTres" action=""><label></label>
+        <option>Escolha uma das opções</option>
+        <option>Resultado dos investimentos do plano</option>
+        <option>Atendimento da área de relacionamento institucional</option>
+        <option>Atendimento (e-mail, site, telefone )</option>
+        <option>Compromisso com a Integridade</option>
+        <option>Consultoria Previdenciária</option>
+      </select></h4>
+      <h4><label>4º Mais importante</label><select id="prioridadeQua" action=""><label></label>
+        <option>Escolha uma das opções</option>
+        <option>Resultado dos investimentos do plano</option>
+        <option>Atendimento da área de relacionamento institucional</option>
+        <option>Atendimento (e-mail, site, telefone )</option>
+        <option>Compromisso com a Integridade</option>
+        <option>Consultoria Previdenciária</option>
+      </select></h4>
+      <h4><label>5º Mais importante</label><select id="prioridadeCin" action="">
+        <option>Escolha uma das opções</option>
+        <option>Resultado dos investimentos do plano</option>
+        <option>Atendimento da área de relacionamento institucional</option>
+        <option>Atendimento (e-mail, site, telefone )</option>
+        <option>Compromisso com a Integridade</option>
+        <option>Consultoria Previdenciária</option>
+      </select></h4>
+    <h3>3 - O quanto você se considera informado sobre as condições,  regras e informações do seu plano de previdência do IBRC?</h3>
+      <div class="cond">
+       <input type="checkbox" class="form-check-input" id="naCond" name="cond"/>
+        <label class="form-check-label" for="naCond">0 - NA</label>
+      </div>
+      <div class="cond">
+        <input type="checkbox" class="form-check-input" id="mb" name="cond"/>
+        <label class="form-check-label" for="mb">1 - Muito bem informado</label>
+        </div>
+        <div class="cond">
+          <input type="checkbox" class="form-check-input" id="bem" name="cond"/>
+          <label class="form-check-label" for="bem">2 - Bem informado</label>
+        </div>
+        <div class="cond">
+          <input type="checkbox" class="form-check-input" id="mom" name="cond"/>
+          <label class="form-check-label" for="mom">3 - Mais ou menos informado</label>
+        </div>
+        <div class="cond">
+          <input type="checkbox" class="form-check-input" id="mal" name="cond"/>
+          <label class="form-check-label" for="mal">4 - Mal informado</label>
+        </div>
+        <div class="cond">
+          <input type="checkbox" class="form-check-input" id="malm" name="cond"/>
+          <label class="form-check-label" for="malm">5 - Muito mal informado</label>
+        </div>
+    <h3>4 - Por qual razão se sente mal informado em relação ao seu plano de previdência do IBRC? </h3>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nSei" name="razao" />
+        <label class="form-check-label" for="nSei">Não sabe onde pode encontrar essas informações</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nTem" name="razao" />
+        <label class="form-check-label" for="nTem">Não tem interesse / Não quer saber</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="confuso" name="razao" />
+        <label class="form-check-label" for="confuso">Acha muito confuso, os termos são muito técnicos</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="mExt" name="razao" />
+        <label class="form-check-label" for="mExt">É muito extenso, longo demais. Poderia ser menor</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="smpM" name="razao" />
+        <label class="form-check-label" for="smpM">Está sempre mudando </label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="oM" name="razao" />
+        <label class="form-check-label" for="oM">Outro motivo</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="naRazao" name="razao" />
+        <label class="form-check-label" for="naRazao">NA (Não Aplicável)</label>
+      </div>
+    <h3>5 - Você é correntista do IBRC?</h3>
+      <div>
+        <input type="checkbox" class="form-check-input" id="sCorre" name="correntista" />
+        <label class="form-check-label" for="sCorre">Sim</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nCorre" name="correntista" />
+        <label class="form-check-label" for="nCorre">Não</label>
+      </div>
+    <h3>6 - Quais produtos você gostaria de ter uma oferta especial como correntista do IBRC?</h3>
+      <div>
+        <input type="checkbox" class="form-check-input" id="cap" name="ofertaEsp" />
+        <label class="form-check-label" for="">Capitalização</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="cDc" name="ofertaEsp" />
+        <label class="form-check-label" for="">Cartão de crédito</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="conso" name="ofertaEsp" />
+        <label class="form-check-label" for="">Consórcios</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="contCorre" name="ofertaEsp" />
+        <label class="form-check-label" for="">Conta Corrente</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="empre" name="ofertaEsp" />
+        <label class="form-check-label" for="">Empréstimo</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="finImo" name="ofertaEsp" />
+        <label class="form-check-label" for="">Financiamento imobiliário</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="planOdon" name="ofertaEsp" />
+        <label class="form-check-label" for="">Plano odontológico</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="segAuto" name="ofertaEsp" />
+        <label class="form-check-label" for="">Seguro automóvel</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="segRes" name="ofertaEsp" />
+        <label class="form-check-label" for="">Seguro residencial</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="outros" name="ofertaEsp" />
+        <label class="form-check-label" for="">Outros</label>
+      </div>
+    <h3>6.1- Qual?</h3>
+     <div>
+       <input type="text" class="form-check-input" id="seisUm" name="seisUm" placeholder="insira outras ofertas" />
+     </div>
+    <h3>7 - Mesmo não sendo correntista do IBRC, para quais produtos você gostaria de ter uma oferta especial como cliente do IBRC?</h3>
+      <div>
+        <input type="checkbox" class="form-check-input" id="cap" name="ofertaEsp" />
+        <label class="form-check-label" for="">Capitalização</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="cDc" name="ofertaEsp" />
+        <label class="form-check-label" for="">Cartão de crédito</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="conso" name="ofertaEsp" />
+        <label class="form-check-label" for="">Consórcios</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="contCorre" name="ofertaEsp" />
+        <label class="form-check-label" for="">Conta Corrente</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="empre" name="ofertaEsp" />
+        <label class="form-check-label" for="">Empréstimo</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="finImo" name="ofertaEsp" />
+        <label class="form-check-label" for="">Financiamento imobiliário</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="planOdon" name="ofertaEsp" />
+        <label class="form-check-label" for="">Plano odontológico</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="segAuto" name="ofertaEsp" />
+        <label class="form-check-label" for="">Seguro automóvel</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="segRes" name="ofertaEsp" />
+        <label class="form-check-label" for="">Seguro residencial</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="outros" name="ofertaEsp" />
+        <label class="form-check-label" for="">Outros</label>
+      </div>
+    <h3>7.1 - Qual?</h3>
+      <div>
+        <input type="text" class="form-check-input" id="seisUm" name="seisUm" placeholder="insira outras ofertas" />
+      </div>
+    <h3>8 - Você tem interesse em ter uma conta no IBRC?</h3>
+      <div>
+        <input type="checkbox" class="form-check-input" id="sCorre" name="correntista" />
+        <label class="form-check-label" for="sCorre">Sim</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nCorre" name="correntista" />
+        <label class="form-check-label" for="nCorre">Não</label>
+      </div>
+    <h3>9 - Por último, qual a probabilidade de você indicar a (resposta da Q.1)  para um amigo ou parente? Dê uma nota de 10 a 0, onde 10 é altamente provável e 0 é nem um pouco provável.</h3>
+      <div>
+       <input type="checkbox" class="form-check-input" id="nZero" name="nota" />
+        <label class="form-check-label" for="nZero">0</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nUm" name="nota" />
+        <label class="form-check-label" for="nUm">1</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nDois" name="nota" />
+        <label class="form-check-label" for="nDois">2</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nTres" name="nota" /> 
+        <label class="form-check-label" for="nTres">3</label>
+      </div>
+      <div> 
+        <input type="checkbox" class="form-check-input" id="nQua" name="nota" />
+        <label class="form-check-label" for="nQua">4</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nCin" name="nota" />
+        <label class="form-check-label" for="nCin">5</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nSeis" name="nota" />
+        <label class="form-check-label" for="nSeis">6</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nSet" name="nota" />
+        <label class="form-check-label" for="nSet">7</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nOi" name="nota" /> 
+        <label class="form-check-label" for="nOi">8</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nNov" name="nota" />
+        <label class="form-check-label" for="nNov">9</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form-check-input" id="nDez" name="nota" />
+        <label class="form-check-label" for="nDez">10</label>
+      </div>
+    
+    <h3>9.1 - Por qual motivo?</h3>
+    <div>
+      <input type="text" class="form-check-input" id="noveUm" name="noveUm" placeholder="insira motivos" />
+    </div>
+    <h3>10 - A quanto tempo trabalha no IBRC? </h3>
+    <div>
+      <input type="text" class="form-check-input" id="dez" name="noveUm" /><label>Anos</label>
+    </div><div>
+      <input type="text" class="form-check-input" id="dez" name="noveUm" /><label>Meses</label>
+    </div>
+    </form>  
+  </my-app>
