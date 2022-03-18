@@ -1,17 +1,40 @@
+<!DOCTYPE html>
+    <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+    <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+    <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <html lang="en" xmlns="">
+    <meta charset="utf-8">
+    <!--<![endif]-->
 <header>
   <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
   <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
   <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+  <script type="text/javascript">
+var question = document.getElementById("razao");
+
+function toogle() {
+  if (dropdown.value == "nSei","nTem") {
+    question.style.display = "show";
+  } else {
+    question.style.display = "hide";
+  }
+}
+SoSciTools.attachEvent(checkbox, "change", toogle);
+SoSciTools.attachEvent(checkbox, "click", toogle);
+toogle();
+</script>
+  <script src="pagecode.js"></script>
+               <title>IBRC - formulário</title>
   <div class="overlay">
     <h1>IBRC - formulário</h1>
     <br/>
   </div>
-  <script type="javascript" src="pagecode.js"></script>
 </header>
 <form>
   <div id="idade">
     <h3>
-      A - Antes de começarmos a pesquisa, por gentileza nos informe a sua idade:
+      A — Antes de começarmos a pesquisa, por gentileza nos informe a sua idade:
     </h3>
     <input type="checkbox" class="idade" id="unDezo" name="idade" value="1" onclick="return redirect();"/>
     <label class="form-check-label" for="unDezo">Menos de 18 anos</label>
@@ -42,25 +65,53 @@
   </div>
   <div id="operadora">
     <h3>
-      1 - Quando pensa em plano de saúde, qual é o nome da operadora que
+      1 — Quando pensa em plano de saúde, qual é o nome da operadora que
       primeiro lhe vem à cabeça?
     </h3>
-    <select id="operadora" class="operadora" action="">
-      <option>Opção 1</option>
-      <option>Opção 2</option>
-      <option>Opção 3</option>
-      <option>Opção 4</option>
+    <select class="operadora" action="">
+      <option>Ameplan (Assistência Médica Planejada)</option>
+      <option>Alice</option>
+      <option>Allianz</option>
+      <option>Amil / DIX / Medial / One Health</option>
+      <option>Assim Saúde</option>
+      <option>BioVida</option>
+      <option>Bradesco</option>
+      <option>Care Plus</option>
+      <option>CCG  (centro clínico gaúcho)</option>
+      <option>Clinipam</option>
+      <option>E-vida</option>
+      <option>Golden Cross / Vision Med</option>
+      <option>GreenLine</option>
+      <option>Hapvida/ São Francisco</option>
+      <option>Ipasgo</option>
+      <option>NotreDame Intermédica</option>
+      <option>Omint</option>
+      <option>Porto Seguros / Itaú Saúde</option>
+      <option>Prevent Senior</option>
+      <option>Pró Médica</option>
+      <option>Sami</option>
+      <option>Saúde Caixa / Caixa Seguros /Rede Gama</option>
+      <option>Saúde Sim</option>
+      <option>Sompo Saúde / Marítima</option>
+      <option>SulAmérica</option>
+      <option>Trasmontano</option>
+      <option>Unimed</option>
+      <option>CNU (Central Nacional Unimed)</option>
+      <option>Seguros Unimed</option>
+      <option>Qsaúde</option>
+      <option>Vitallis</option>
+      <option>NA (Não Aplicável)</option>
     </select>
   </div>
   <div id="prioridade">
     <h3>
-      2 - Por ordem de prioridade, peço que diga o que considera mais importante
+      2 — Por ordem de prioridade, peço que diga o que considera mais importante
       na gestão do seu plano de previdência, onde 1 é o mais importante e 5 é o
       menos importante?
     </h3>
     <h4>
-      <label>1º Mais importante</label
-      ><select id="prioridadeUm" action="">
+      <label>1º Mais importante</label>
+      <select id="prioridadeUm">
         <option>Escolha uma das opções</option>
         <option>Resultado dos investimentos do plano</option>
         <option>Atendimento da área de relacionamento institucional</option>
@@ -119,7 +170,7 @@
   </div>
   <div id="cond">
     <h3>
-      3 - O quanto você se considera informado sobre as condições, regras e
+      3 — O quanto você se considera informado sobre as condições, regras e
       informações do seu plano de previdência do IBRC?
     </h3>
     <div class="cond">
@@ -128,16 +179,16 @@
     </div>
     <div class="cond">
       <input type="checkbox" class="cond" id="mb" name="cond" />
-      <label class="form-check-label" for="mb">1 - Muito bem informado</label>
+      <label class="form-check-label" for="mb">1 — Muito bem informado</label>
     </div>
     <div>
       <input type="checkbox" class="cond" id="bem" name="cond" />
-      <label class="form-check-label" for="bem">2 - Bem informado</label>
+      <label class="form-check-label" for="bem">2 — Bem informado</label>
     </div>
     <div>
       <input type="checkbox" class="form-check-input" id="mom" name="cond" />
       <label class="form-check-label" for="mom"
-        >3 - Mais ou menos informado</label
+        >3 — Mais ou menos informado</label
       >
     </div>
     <div>
@@ -146,12 +197,12 @@
     </div>
     <div>
       <input type="checkbox" class="form-check-input" id="malm" name="cond" />
-      <label class="form-check-label" for="malm">5 - Muito mal informado</label>
+      <label class="form-check-label" for="malm">5 — Muito mal informado</label>
     </div>
   </div>
   <div id="razao">
     <h3>
-      4 - Por qual razão se sente mal informado em relação ao seu plano de
+      4 — Por qual razão se sente mal-informado em relação ao seu plano de
       previdência do IBRC?
     </h3>
     <div>
@@ -194,119 +245,61 @@
     </div>
   </div>
   <div id="correntista">
-    <h3>5 - Você é correntista do IBRC?</h3>
+    <h3>5 — Você é correntista do IBRC?</h3>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="sCorre"
-        name="correntista"
-      />
+      <input type="checkbox" class="form-check-input" id="simCorre" name="correntista"/>
       <label class="form-check-label" for="sCorre">Sim</label>
     </div>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="nCorre"
-        name="correntista"
+      <input type="checkbox" class="form-check-input" id="naoCorre" name="correntista"
       />
       <label class="form-check-label" for="nCorre">Não</label>
     </div>
   </div>
   <div id="correofertaEsp">
     <h3>
-      6 - Quais produtos você gostaria de ter uma oferta especial como
+      6 — Quais produtos você gostaria de ter uma oferta especial como
       correntista do IBRC?
     </h3>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="cap"
-        name="correofertaEsp"
-      />
+      <input type="checkbox" class="form-check-input" id="ecapt" name="correofertaEsp"/>
       <label class="form-check-label" for="">Capitalização</label>
     </div>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="cDc"
-        name="correofertaEsp"
-      />
+      <input type="checkbox" class="form-check-input" id="ecDc" name="correofertaEsp"/>
       <label class="form-check-label" for="">Cartão de crédito</label>
     </div>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="conso"
-        name="correofertaEsp"
-      />
+      <input type="checkbox" class="form-check-input" id="econso" name="correofertaEsp"/>
       <label class="form-check-label" for="">Consórcios</label>
     </div>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="contCorre"
-        name="correofertaEsp"
-      />
+      <input type="checkbox" class="form-check-input" id="econtCorre" name="correofertaEsp"/>
       <label class="form-check-label" for="">Conta Corrente</label>
     </div>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="empre"
-        name="correofertaEsp"
-      />
+      <input type="checkbox" class="form-check-input" id="empres"
+        name="correofertaEsp"/>
       <label class="form-check-label" for="">Empréstimo</label>
     </div>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="finImo"
-        name="correofertaEsp"
-      />
+      <input type="checkbox" class="form-check-input" id="efinImo" name="correofertaEsp"/>
       <label class="form-check-label" for="">Financiamento imobiliário</label>
     </div>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="planOdon"
-        name="correofertaEsp"
-      />
+      <input type="checkbox" class="form-check-input" id="eplanOdon" name="correofertaEsp"/>
       <label class="form-check-label" for="">Plano odontológico</label>
     </div>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="segAuto"
-        name="correofertaEsp"
-      />
+      <input type="checkbox" class="form-check-input" id="esegAuto" name="correofertaEsp"/>
       <label class="form-check-label" for="">Seguro automóvel</label>
     </div>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="segRes"
-        name="correofertaEsp"
-      />
+      <input type="checkbox" class="form-check-input" id="esegRes" name="correofertaEsp"/>
       <label class="form-check-label" for="">Seguro residencial</label>
     </div>
     <div>
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="outros"
-        name="correofertaEsp"
-      />
+      <input type="checkbox" class="form-check-input" id="eoutros" name="correofertaEsp"/>
       <label class="form-check-label" for="">Outros</label>
     </div>
   </div>
@@ -324,7 +317,7 @@
   </div>
   <div id="ofertaEsp">
     <h3>
-      7 - Mesmo não sendo correntista do IBRC, para quais produtos você gostaria
+      7 — Mesmo não sendo correntista do IBRC, para quais produtos você gostaria
       de ter uma oferta especial como cliente do IBRC?
     </h3>
     <div>
@@ -419,19 +412,13 @@
     </div>
   </div>
   <div id="setUm">
-    <h3>7.1 - Qual?</h3>
+    <h3>7.1 — Qual?</h3>
     <div>
-      <input
-        type="text"
-        class="setUm"
-        id="setUm"
-        name="setUm"
-        placeholder="insira outras ofertas"
-      />
+      <input type="text" class="setUm" id="seteUm" name="setUm" placeholder="insira outras ofertas"/>
     </div>
   </div>
   <div id="conta">
-    <h3>8 - Você tem interesse em ter uma conta no IBRC?</h3>
+    <h3>8 — Você tem interesse em ter uma conta no IBRC?</h3>
     <div>
       <input type="checkbox" class="form-check-input" id="sCorre" name="correntista"/>
       <label class="form-check-label" for="sCorre">Sim</label>
@@ -448,7 +435,7 @@
   </div>
   <div id="nota">
     <h3>
-      9 - Por último, qual a probabilidade de você indicar a (resposta da Q.1)
+      9 — Por último, qual a probabilidade de você indicar a (resposta da Q.1)
       para um amigo ou parente? Dê uma nota de 10 a 0, onde 10 é altamente
       provável e 0 é nem um pouco provável.
     </h3>
@@ -498,19 +485,20 @@
     </div>
   </div>
   <div id="nvUm">
-    <h3>9.1 - Por qual motivo?</h3>
+    <h3>9.1 — Por qual motivo?</h3>
     <div>
-      <input type="text" class="form-check-input" id="nvUm" name="nvUm" placeholder="insira motivos"/>
+      <input type="text" class="form-check-input" id="novUm" name="nvUm" placeholder="insira motivos"/>
     </div>
   </div>
   <div id="dez">
-    <h3>10 - A quanto tempo trabalha no IBRC?</h3>
+    <h3>10 — A quanto tempo trabalha no IBRC?</h3>
     <div>
-      <input type="text" class="form-check-input" id="dez" name="noveUm"/><label>Anos</label>
+      <input class="form-check-input" name="noveUm" type="text"/><label>Anos</label>
     </div>
     <div>
-      <input type="text" class="form-check-input" id="dez" name="noveUm"/><label>Meses</label>
+      <input type="text" class="form-check-input" name="noveUm"/><label>Meses</label>
     </div>
   </div>
 </form>
 <button type="button">Submit</button>
+</html>
