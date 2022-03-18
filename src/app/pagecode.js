@@ -34,22 +34,37 @@ function submitForm() {
     .done(function (response) {})
     .error();
 }
-function hideAll() {
-  $('#idade').hide();
-  $('#operadora').hide();
-  $('#prioridade').hide();
-  $('#cond').hide();
-  $('#razao').hide();
-  $('#correntista').hide();
-  $('#correofertaEsp').hide();
-  $('#seisUm').hide();
-  $('#ofertaEsp').hide();
-  $('#setUm').hide();
-  $('#conta').hide();
-  $('#nota').hide();
-  $('#nvUm').hide();
-  $('#dez').hide();
-}
+  document.getElementsByIdName('idade')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('operadora')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('prioridade')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('cond')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('razao')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('correntista')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('correofertaEsp')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('seisUm')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('ofertaEsp')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('setUm')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('conta')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('nota')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('nvUm')[0].style.visibility = 'hidden';
+  document.getElementsByIdName('dez')[0].style.visibility = 'hidden';
+Yuuki — Today at 8:14 PM
+//function hideAll() {
+//  $('#idade').hide();
+//  $('#operadora').hide();
+//  $('#prioridade').hide();
+//  $('#cond').hide();
+//  $('#razao').hide();
+//  $('#correntista').hide();
+//  $('#correofertaEsp').hide();
+//  $('#seisUm').hide();
+//  $('#ofertaEsp').hide();
+//  $('#setUm').hide();
+//  $('#conta').hide();
+//  $('#nota').hide();
+//  $('#nvUm').hide();
+//  $('#dez').hide();
+//}
 
 function show(question_number) {
   switch (question_number) {
