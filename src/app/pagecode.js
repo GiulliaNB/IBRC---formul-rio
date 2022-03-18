@@ -73,32 +73,32 @@ function redirect() {
   return true;
 }
 
-//var inputs = $('[type="checkbox"]');
-//inputs.on('click', function () {
-//  inputs.get().forEach(function (el) {
-//    el.checked = el == this && this.checked;
-//  }, this);
-//});
+var inputs = $('[type="checkbox"]');
+inputs.on('click', function () {
+  inputs.get().forEach(function (el) {
+    el.checked = el == this && this.checked;
+  }, this);
+});
 
-//function submitForm() {
-//  var guardaForm = {
-//    idade: $('#Idade').val(),
-//    operadora: $('#operadora').val(),
-//    prioridade: $('#prioridade').val(),
-//    cond: $('#cond').val(),
-//    razao: $('#razao').val(),
-//    correntista: $('#correntista').val(),
-//    correofertaEsp: $('#correofertaEsp').val(),
-//    seisUm: $('#seisUm').val(),
-//    ofertaEsp: $('#ofertaEsp').val(),
-//    setUm: $('#setUm').val(),
-//    conta: $('#conta').val(),
-//    nota: $('#nota').val(),
-///    nvUm: $('#nvUm').val(),
-//    dez: $('#dez').val(),
-//  };
-//  $.post('http://Localhost:80/', submitForm)
-//    .done(function (response) {})
-//    .error();
-//}
+function submitForm() {
+  var guardaForm = {
+    idade: $('#Idade').val(),
+    operadora: $('#operadora').val(),
+    prioridade: $('#prioridade').val(),
+    cond: $('#cond').val(),
+    razao: $('#razao').val(),
+    correntista: $('#correntista').val(),
+    correofertaEsp: $('#correofertaEsp').val(),
+    seisUm: $('#seisUm').val(),
+    ofertaEsp: $('#ofertaEsp').val(),
+    setUm: $('#setUm').val(),
+    conta: $('#conta').val(),
+    nota: $('#nota').val(),
+    nvUm: $('#nvUm').val(),
+    dez: $('#dez').val(),
+  };
+  $.post('http://Localhost:80/', submitForm)
+    .done(function (response) {})
+    .error();
+}
 
